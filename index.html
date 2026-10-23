@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini TwinPass : Lightweight Single-File Python Terminal Chatbot Framework</title>
+
+    <!-- Global SEO Meta Tags -->
+    <meta name="description" content="Gemini TwinPass is a lightweight, single-file Python terminal chatbot framework powered by the official Google GenAI SDK and a dual-pass prompt engineering loop.">
+    <meta name="keywords" content="Python Chatbot, Google GenAI SDK, Dual-Pass AI, Terminal Chatbot, Prompt Engineering, Gemini-2.5-Flash, Gemini-2.5-Pro">
+    <meta name="author" content="Rayaan Tasnim">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/rayaantasnim/Gemini-Chatbot/">
+    <meta property="og:title" content="Gemini TwinPass | Lightweight Single-File Python Terminal Chatbot Framework">
+    <meta property="og:description" content="Streamlined single-file Python terminal chatbot framework combining official Google GenAI SDK integrations with dual-pass prompt engineering.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://github.com/rayaantasnim/Gemini-Chatbot/">
+    <meta name="twitter:title" content="Gemini TwinPass | Single-File Terminal Framework">
+    <meta name="twitter:description" content="Production-ready terminal chatbot and dual-pass Gemini AI orchestration contained within a single Python script.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json" src="schema.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome v6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GSAP & ScrollTrigger Plugin CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION BAR -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+                <span class="dot"></span> Gemini TwinPass
+            </a>
+            
+            <!-- Pure CSS Hamburger Trigger -->
+            <button class="hamburger" id="hamburger-trigger" aria-label="Toggle Navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- GSAP OVERLAY NAVIGATION CANVAS -->
+    <div class="nav-overlay" id="nav-overlay">
+        <button class="close-btn" id="close-trigger" aria-label="Close Navigation">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h1 class="navbar-heading">Navigation Topology</h1>
+        
+        <ul class="overlay-links">
+            <li><a href="#hero" class="nav-link">01. Core Architecture</a></li>
+            <li><a href="#pipelines" class="nav-link">02. Dual-Pass Pipelines</a></li>
+            <li><a href="#characteristics" class="nav-link">03. Ten Core Features</a></li>
+            <li><a href="#conclusion" class="nav-link">04. Synthesis & Repository</a></li>
+        </ul>
+
+        <a href="https://github.com/rayaantasnim/Gemini-Chatbot/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> View GitHub Repository
+        </a>
+    </div>
+
+    <!-- HERO BANNER SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-text-block">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i> Lightweight Terminal Chatbot Framework
+                </div>
+                <h1>Python Terminal Chatbot & Dual-Pass AI in One Core Script</h1>
+                <p>
+                    Gemini TwinPass eliminates conventional repository complexity by housing a lightweight, single-file Python terminal chatbot framework powered by the official Google GenAI SDK within a completely standalone script. Engineered for developers who demand robust intelligence without structural bloat, it features a dual-pass prompt engineering loop that automatically intercepts casual or vague user messages, refines them via <code>gemini-2.5-flash</code>, and routes the enhanced payload to <code>gemini-2.5-pro</code> for high-reasoning execution. Complete with an infinite console shell loop, zero-persistence secure token input via getpass, and clean visual telemetry logs, Gemini TwinPass encapsulates advanced conversational power into a singular executable file.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#pipelines" class="btn btn-primary">
+                        Explore Engine Architecture <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/rayaantasnim/Gemini-Chatbot/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fa-brands fa-github"></i> Repository Access
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Software Architecture Blueprint">
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PIPELINE ARCHITECTURES (VERTICAL LAYOUT) -->
+    <section class="pipeline-section" id="pipelines">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">System Design</span>
+                <h2>Dual-Pass Terminal Pipelines</h2>
+                <p>A unified single-file Python terminal framework built upon dual-pass prompt optimization and zero-persistence secure token gating.</p>
+            </div>
+
+            <div class="pipeline-cards">
+                <!-- CARD 01 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">PASS 01</span>
+                        <h3>Pass 1: Prompt Optimization</h3>
+                        <p>
+                            The first pass of the execution pipeline intercepts raw, vague user inputs and routes them through <code>gemini-2.5-flash</code> to automatically re-engineer, expand, and structure them into optimized, highly descriptive prompts. This flash-speed preprocessor operates in milliseconds, transforming casual user intent into precise prompt instructions before passing execution to high-reasoning downstream models.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Flash Preprocessor Visual">
+                    </div>
+                </div>
+
+                <!-- CARD 02 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">PASS 02</span>
+                        <h3>Pass 2: High-Fidelity Execution</h3>
+                        <p>
+                            Once preprocessed, the enhanced prompt payload is dispatched to <code>gemini-2.5-pro</code> to compute a high-quality, deep-reasoning final response. By separating rapid prompt expansion from complex cognitive synthesis, Gemini TwinPass achieves optimal token efficiency and exceptional answer fidelity across every conversational turn.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Execution Engine Logic">
+                    </div>
+                </div>
+
+                <!-- CARD 03 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">CONFIG 03</span>
+                        <h3>Config 03: Infinite Console Shell</h3>
+                        <p>
+                            Gemini TwinPass features an infinite console shell loop that keeps the conversation going smoothly right inside your terminal. Developers can engage in sustained, multi-turn interactive dialogues without restarting scripts or managing complex window sessions, delivering an uninterrupted command-line chat experience.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Programmatic Settings Code">
+                    </div>
+                </div>
+
+                <!-- CARD 04 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">AUTH 04</span>
+                        <h3>Auth 04: Zero-Persistence Security</h3>
+                        <p>
+                            System security is strictly maintained using zero-persistence secure token input via Python's <code>getpass</code> module during initialization. API keys are captured securely without echoing to the terminal screen or lingering in environment configuration files and GitHub commit history, ensuring absolute credential protection.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Security Terminal Gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEN CHARACTERISTICS SECTIONS -->
+    <section class="characteristics-section" id="characteristics">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Deep Dive</span>
+                <h2>Ten Core Architectural Features</h2>
+                <p>Key highlights showcasing how single-file terminal architecture drives exceptional interactive performance and security.</p>
+            </div>
+
+            <!-- ROW 01 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-folder-minus"></i></div>
+                    <h3>01. Standalone Single-File Architecture</h3>
+                    <p>
+                        Gemini TwinPass consolidates all logic, configuration, and execution flows into a single Python script. By eliminating external module dependencies and project setup overhead, developers can run, test, and share conversational AI tooling instantly without navigating nested directory trees.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Clean Code File Structure">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 02 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>02. Official Google GenAI SDK Integration</h3>
+                    <p>
+                        By leveraging the official Google GenAI SDK natively, the framework interacts directly with advanced model endpoints using clean, modern API primitives. This ensures full forward compatibility, reliable request handling, and robust typing standards across all communications.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Runtime Configuration Matrix">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 03 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>03. Dual-Pass Prompt Engineering Loop</h3>
+                    <p>
+                        The core processing loop decouples prompt restructuring from final synthesis. Initial inputs are optimized by <code>gemini-2.5-flash</code> before being passed to <code>gemini-2.5-pro</code>, ensuring every query benefits from enhanced clarity and deep reasoning capacity.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Token Orchestration Network">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 04 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-filter"></i></div>
+                    <h3>04. Raw Input Interception & Expansion</h3>
+                    <p>
+                        Casual, brief, or ambiguous user queries are automatically intercepted and expanded into structured, context-rich instructions. This preprocessing stage prevents low-quality outputs by supplying downstream reasoning models with fully articulated parameters.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Sanitization Process">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 05 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>05. Infinite Interactive Console Shell Loop</h3>
+                    <p>
+                        Designed for seamless command-line operation, the framework maintains an open session loop that allows users to converse continuously. Responses stream directly into the terminal window with clean formatting and clear visual separation between passes.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Server Hardware Racks">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 06 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-route"></i></div>
+                    <h3>06. High-Reasoning Execution Routing</h3>
+                    <p>
+                        Complex problem-solving and multi-step computational tasks are routed specifically to <code>gemini-2.5-pro</code>. This targeted allocation guarantees deep analytical rigor while keeping light tasks agile and responsive.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dynamic URL Routing Concept">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 07 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>07. Zero-Persistence Secure Token Input</h3>
+                    <p>
+                        Utilizing Python's <code>getpass</code> module, API credentials are requested securely at runtime without echoing characters to the display. This ensures keys never accidentally find their way into shell history files, logs, or public code repositories.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Security Shield">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 08 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>08. Clean Visual Console Telemetry Logs</h3>
+                    <p>
+                        Runtime diagnostics, pass intervals, and execution metrics are clearly rendered in the console using structured logs. Developers can monitor token transitions and processing milestones at a glance without cluttering the interface.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern User Interface Dashboard">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 09 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <h3>09. Low-Latency Prompt Transmission</h3>
+                    <p>
+                        Optimized network calls and direct SDK bindings reduce overhead between user input and model inference, delivering snappy response times and an immediate interactive feel directly inside the terminal shell.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Stream Flow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>10. Ephemeral Memory Session State</h3>
+                    <p>
+                        Conversational history is managed cleanly within volatile runtime memory during the session lifecycle, ensuring lightweight execution without requiring local database persistence or external storage setup.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Database Storage Server">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONCLUSION SECTION -->
+    <section class="conclusion-section" id="conclusion">
+        <div class="container">
+            <div class="conclusion-box">
+                <div class="conclusion-text">
+                    <h2>Redefining Python Terminal Chatbot Engineering</h2>
+                    <p>
+                        Gemini TwinPass proves that powerful AI chatbot applications do not require multi-directory repository complexity. By combining the official Google GenAI SDK with a dual-pass prompt optimization loop and zero-persistence secure credential entry inside a clean Python script, developers gain absolute control, speed, and security across every terminal interaction.
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/rayaantasnim/Gemini-Chatbot/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fa-brands fa-github"></i> Access Repository on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="conclusion-img-wrapper">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Engineering Team Collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINIMALISTIC FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-author">Authorized by Rayaan Tasnim with precision</p>
+            <p>© Project Gemini TwinPass 2026; All rights reserved</p>
+            <span class="footer-brand-tag">Powered by Olympiad Edge</span>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVITY & GSAP SCROLLTRIGGER INTERACTION LAYER -->
+    <script src="script.js"></script>
+</body>
+</html>
